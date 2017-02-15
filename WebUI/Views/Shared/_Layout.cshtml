@@ -8,13 +8,13 @@
     <title>@ViewBag.Title</title>
 </head>
 <body>
-    <div class="navbar-inverse" role="navigation">
+    <div class="navbar navbar-inverse" role="navigation">
         <a class="navbar-brand" href="#">BookStore - Книжный магазин</a>
     </div>
 
     <div class="row panel">
         <div id ="genres" class="col-xs-3">
-            Здесь будет добавлен контент позже
+            @Html.Action("Menu","Nav")
         </div>
         <div class="col-xs-8">
             @RenderBody()

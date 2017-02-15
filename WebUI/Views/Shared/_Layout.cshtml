@@ -7,10 +7,18 @@
     <link href="~/Content/bootstrap-theme.min.css" rel="stylesheet" />
     <link href="~/Content/Site.css" rel="stylesheet" />
     <title>@ViewBag.Title</title>
+    <style>
+        .navbar-right{
+            float: right !important;
+            margin-right: 15px;
+            margin-left: 15px;
+        }
+        </style>
 </head>
 <body>
     <div class="navbar navbar-inverse" role="navigation">
         <a class="navbar-brand" href="#">BookStore - Книжный магазин</a>
+        @Html.Action("Summary","Cart")
     </div>
 
     <div class="row panel">
